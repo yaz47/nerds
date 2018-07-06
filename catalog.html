@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="170" height="70" alt="Логотип дизайн-студии Nerds»" />
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li class="navigation-current">Магазин</li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="bucket-link">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="catalog">
+        <h2>Магазин готовых шаблонов</h2>
+        <!-- TODO: Make a filter form -->
+        <p>Сортировать:</p>
+        <ul class="sorting-list">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По названию</a></li>
+        </ul>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/sedona.jpg" width="360" height="576"  alt="sedona" />
+            <div class="marker"></div>
+          </li>
+          <li class="catalog-item">
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/barbershop.jpg" width="360" height="576"  alt="barbershop" />
+            <div class="marker"></div>
+          </li>
+          <li class="catalog-item">
+            <h3>A plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/a-plus.jpg" width="360" height="576"  alt="A plus" />
+            <div class="marker"></div>
+          </li>
+          <li class="catalog-item">
+            <h3>Pink app</h3>
+            <p>Продуктовый  лендинг приложения для iOS и Android</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/pink-app.jpg" width="360" height="576"  alt="pink app" />
+            <div class="marker"></div>
+          </li>
+          <li class="catalog-item">
+            <h3>Mishka</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/mishka.jpg" width="360" height="576"  alt="mishka" />
+            <div class="marker"></div>
+          </li>
+          <li class="catalog-item">
+            <h3>Кваст</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="button" href="#">9 900 руб.</a>
+            <img src="img/kvast.jpg" width="360" height="576"  alt="Кваст" />
+            <div class="marker"></div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="map">
+        <h2>Nёrds design studio</h2>
+        <img src="img/map.jpg" width="1440" height="416" />
+        <p>
+          191186, Санкт-Петербург,<br />
+          ул. Б. Конюшенная, д.  19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <button class="message">Напишите нам</button>
+      </div>
+      <div class="footer-social">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+    </footer>
+    <section class="modal modal-message">
+      <h2>Напишите нам</h2>
+      <form class="message-form" method="post"  action="https://echo.htmlacademy.ru">
+        <p class="message-item">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия" />
+        </p>
+        <p class="message-item">
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="e-mail" placeholder="email@example.com" />
+        </p>
+        <p class="message-item">
+          <label for="message-text">Текст письма:</label>
+          <textarea id="message-text" name="message-text" rows="4">В свободной форме</textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+  </body>
+</html>
