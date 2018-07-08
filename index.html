@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nerds»</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -17,7 +19,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="bucket-link">Корзина</li>
+          <li class="bucket-link"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -58,23 +60,23 @@
           <li class="services-item">
             <h3>Приложения</h3>
             <img src="img/services-image-2.png" width="300" height="146" />
-            <p>Покорите топ-10 приложений в AppStore b Google Play</p>
-            <a class="button" href="#">Заказать</a>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button button-green" href="#">Заказать</a>
           </li>
           <li class="services-item">
             <h3>Презентации</h3>
             <img src="img/services-image-3.png" width="300" height="146" />
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </section>
       <section class="description">
         <h2 class="visually-hidden">Описание студии</h2>
-        <b>Мы - маленькая, но гордая дизай-студия из Краснодара.</b>
+        <b class="slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3>Выполняем заказы на разработку:</h3>
-        <ul>
+        <ul class="description-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -82,12 +84,12 @@
         <p class="logo">
           <img src="img/logo-big.png" width="360" height="208" alt="Логотип студии" />
         </p>
+        <h3>С 2004 года любим точность во всем:</h3>
         <table class="description-table">
-          <caption>С 2004 года любим точность во всем:</caption>
           <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+            <td>146<sup>%</sup></td>
+            <td>100<sup>%</sup></td>
+            <td>50<sup>%</sup></td>
           </tr>
           <tr>
             <td>Уровень самоотдачи</td>
@@ -99,35 +101,37 @@
       <section class="clients">
         <h2 class="visually-hidden">Клиенты студии</h2>
         <ul class="clients-list">
-          <li><img src="img/htmlacademy-logo.png" width="199" height="68" alt="Лого htmlacademy" /></li>
-          <li><img src="img/borodinski-logo.png" width="209" height="90" alt="Лого borodinski" /></li>
-          <li><img src="img/pink-logo.png" width="185" height="52" alt="Лого pink" /></li>
-          <li><img src="img/mishka-logo.png" width="173" height="84" alt="Лого mishka" /></li>
+          <li><a class="clients-item" href="#"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="Лого htmlacademy" /></a></li>
+          <li><a class="clients-item" href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Лого borodinski" /></a></li>
+          <li><a class="clients-item" href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Лого pink" /></a></li>
+          <li><a class="clients-item" href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Лого mishka" /></a></li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <div class="map">
-        <h2>Nёrds design studio</h2>
         <img src="img/map.jpg" width="1440" height="416" />
-        <p>
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д.  19/8
-        </p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <button class="message">Напишите нам</button>
+        <div class="message-block">
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург,<br />
+            ул. Б. Конюшенная, д.  19/8
+          </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button">Напишите нам</button>
+        </div>
       </div>
       <div class="footer-social">
-        <b>Давайте дружить, это выгодно!</b>
+        <b class="footer-slogan">Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей</p>
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
     </footer>
-    <section class="modal modal-message">
+    <section class="modal-message">
       <h2>Напишите нам</h2>
       <form class="message-form" method="post"  action="https://echo.htmlacademy.ru">
         <p class="message-item">
