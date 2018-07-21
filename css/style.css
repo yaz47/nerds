@@ -444,7 +444,7 @@ a {
   margin: 0;
   padding: 0;
 
-  border: 0.1 solid transparent;
+  border: 0.1px solid transparent;
 }
 
 .description-column-right {
@@ -707,7 +707,7 @@ a {
 .address-block p {
   margin: 17px 10px;
 
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   color: #666666;
   text-overflow: ellipsis;
@@ -1053,11 +1053,17 @@ a {
 }
 
 .filter legend,
+.filter h3,
 .sorting-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.filter h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .filter ul {
